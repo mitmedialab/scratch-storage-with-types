@@ -1,3 +1,24 @@
+# scratch-storage-with-types
+
+This is a fork of [scratch-storage](https://github.com/LLK/scratch-storage) to assist with writing typesafe extensions using [PRG's extension framework](https://github.com/mitmedialab/prg-extension-boilerplate). 
+
+Typescript has a hard time extracting types from the `scratch-storage` package, so this repo can help you get a better idea of the typescript signatures.
+
+Declaration files are included in this repo inside of `dist/`, and you can regenerate them for yourself after cloning and installing like so:
+
+```bash
+# After cloning and installing, i.e.
+git clone git@github.com:mitmedialab/scratch-render-with-types.git
+cd scratch-render-with-types
+npm install
+
+# Have typescript generate the type declarations
+npm run make:types
+```
+
+> **NOTE:** The types are currently _BROKEN_, meaning they do not represent valid typescript types. Some work will need to be done to refactor the `.js` code to fix this. 
+
+Below is the original [scratch-storage](https://github.com/LLK/scratch-storage) README ...
 ## scratch-storage
 #### Scratch Storage is a library for loading and storing project and asset files for Scratch 3.0
 

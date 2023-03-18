@@ -21,7 +21,8 @@
     "test": "npm run lint && npm run tap",
     "version": "json -f package.json -I -e \"this.repository.sha = '$(git log -n1 --pretty=format:%H)'\"",
     "watch": "webpack --progress --colors --watch",
-    "semantic-release": "semantic-release"
+    "semantic-release": "semantic-release",
+    "make:types": "./node_modules/.bin/tsc"
   },
   "dependencies": {
     "arraybuffer-loader": "^1.0.3",
@@ -29,6 +30,7 @@
     "fastestsmallesttextencoderdecoder": "^1.0.7",
     "js-md5": "0.7.3",
     "minilog": "3.1.0",
+    "typescript": "^5.0.2",
     "worker-loader": "^2.0.0"
   },
   "devDependencies": {
